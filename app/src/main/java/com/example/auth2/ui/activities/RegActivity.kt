@@ -1,4 +1,4 @@
-package com.example.auth2
+package com.example.auth2.ui.activities
 
 import android.os.Bundle
 import android.util.Log

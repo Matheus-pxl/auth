@@ -1,12 +1,8 @@
-package com.example.auth2
+package com.example.auth2.ui.activities
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.auth2.databinding.ActivityHomeBinding
-import com.example.auth2.databinding.ActivityRegBinding
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding:ActivityHomeBinding

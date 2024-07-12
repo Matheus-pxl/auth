@@ -1,22 +1,22 @@
-package com.example.auth2
+package com.example.auth2.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.auth2.databinding.ActivityMainBinding
+import com.example.auth2.databinding.ActivityLoginBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     private lateinit var auth:FirebaseAuth
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = Firebase.auth
 
@@ -38,19 +38,19 @@ class MainActivity : AppCompatActivity() {
             if (email.isNotEmpty() && senha.isNotEmpty()) {
                 signinWithEmailAndPassword(email, senha)
             } else {
-                Toast.makeText(this@MainActivity, "Preencha os campos", Toast.LENGTH_LONG)
+                Toast.makeText(this@LoginActivity, "Preencha os campos", Toast.LENGTH_LONG)
                     .show()
             }
         }
     }
 
     private fun navegarPaginaHome(){
-        val intent = Intent(this@MainActivity, HomeActivity::class.java)
+        val intent = Intent(this@LoginActivity, HomeActivity::class.java)
         startActivity(intent)
     }
 
     private fun navegarPaginaRegistro() {
-        val intent = Intent(this@MainActivity, RegActivity::class.java)
+        val intent = Intent(this@LoginActivity, RegActivity::class.java)
         startActivity(intent)
     }
 

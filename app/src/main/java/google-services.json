@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "865279456759",
+    "project_id": "auth2-eee8f",
+    "storage_bucket": "auth2-eee8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865279456759:android:8025d3f820cfe9a2d2aaf2",
+        "android_client_info": {
+          "package_name": "com.example.auth2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWZDZomgpDNFHfZS7kW3SXfQr-dTg-3Z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
