@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">auth2</string>
+    <string name="registrar">Registrar</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="confirme_sua_senha">Confirme sua senha</string>
+</resources>
